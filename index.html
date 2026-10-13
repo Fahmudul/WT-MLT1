@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Club Membership</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .topnav ul {
+        margin: 0 10px;
+        list-style-type: none;
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+      }
+
+      .topnav ul li {
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      .head-title {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        width: 400px;
+        margin: 0 auto;
+        min-height: 100px;
+      }
+
+      form {
+        width: 400px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <ul>
+        <li>Home</li>
+        <li>Events</li>
+        <li>Join</li>
+      </ul>
+    </div>
+
+    <h1 class="head-title">Programming Club</h1>
+
+    <div class="card">
+      <div style="display: flex; justify-content: space-between">
+        <h3>Club Membership</h3>
+        <span class="badge">New</span>
+      </div>
+      <div>
+        <p>
+          Join the Programming Club to take part in contests, workshops and
+          weekly meetups.
+        </p>
+      </div>
+    </div>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Join the Club</legend>
+        <div>
+          <label for=""> Full Name: </label>
+          <input type="text" minlength="3" required />
+        </div>
+
+        <div>
+          <label for="">Email:</label>
+          <input type="email" />
+        </div>
+
+        <div>
+          <label for="">Student ID:</label>
+          <input
+            type="text"
+            placeholder="24-56789-1"
+            pattern="\d{2}-\d{5}-\d{1}"
+          />
+        </div>
+
+        <div>
+          <label for="">Age:</label>
+        </div>
+
+        <div>
+          <label for="">Membership Type:</label>
+          <input
+            type="radio"
+            name="membership-type"
+            value="General"
+            id="general"
+          />
+          <label for="general">General</label>
+
+          <input
+            type="radio"
+            name="membership-type"
+            value="Executive"
+            id="executive"
+          />
+          <label for="general">Executive</label><br />
+        </div>
+        <div><label for="">Preferred Club:</label> Select a club</div>
+
+        <div>
+          <label for="">Why do you want to join?</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="" id="" />I agree to the club rules
+        </div>
+      </fieldset>
+      <button type="submit">Join</button>
+    </form>
+  </body>
+</html>
+
+
