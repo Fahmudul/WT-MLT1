@@ -43,10 +43,13 @@
       form {
         width: 400px;
         margin: 0px auto;
+      }
+
+      form fieldset {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 5px;
+        gap: 15px;
       }
     </style>
   </head>
@@ -119,7 +122,16 @@
           />
           <label for="general">Executive</label><br />
         </div>
-        <div><label for="">Preferred Club:</label> Select a club</div>
+        <div>
+          <label for="">Preferred Club:</label>
+
+          <select name="prefered-club" id="clubs" required>
+            <option value="select-club">Select a club</option>
+            <option value="programming">Programming</option>
+            <option value="robotics">Robotics</option>
+            <option value="debate">Debate</option>
+          </select>
+        </div>
 
         <div>
           <label for="">Why do you want to join?</label>
@@ -133,5 +145,3 @@
     </form>
   </body>
 </html>
-
-
